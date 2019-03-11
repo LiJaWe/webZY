@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="./js/javascript2.js"></script>
+    <title>猜数字游戏</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background-color: cornsilk;
+        }
+        
+        .div1 {
+            width: 350px;
+            height: auto;
+            margin: 0 auto;
+            margin-top: 200px;
+        }
+        
+        #div1 {
+            width: 350px;
+            height: 50px;
+            margin: auto;
+            text-align: center;
+        }
+        
+        span {
+            display: inline-block;
+            height: 50px;
+            line-height: 50px;
+            color: rgb(146, 55, 185);
+        }
+        
+        p {
+            font-size: 16px;
+            margin-top: 10px;
+            padding-left: 10px;
+        }
+        
+        .text {
+            line-height: 50px;
+        }
+        
+        .txt {
+            width: 200px;
+            height: 25px;
+            outline-color: rgba(112, 191, 211, 0.856);
+            vertical-align: middle;
+        }
+        
+        .btn1 {
+            color: cornflowerblue;
+            background-color: rgba(15, 209, 144, 0.473);
+            border: none;
+            outline-color: rgba(211, 112, 208, 0.856);
+        }
+        
+        .btn2 {
+            width: 50px;
+            height: 29px;
+            vertical-align: middle;
+            line-height: 29px;
+            margin-left: 10px;
+        }
+        
+        .Lastnumber {
+            display: none;
+        }
+        
+        .block {
+            display: block;
+        }
+        
+        .none {
+            display: none;
+        }
+        
+        .NewGame {
+            width: 100px;
+            height: 30px;
+            margin-left: 10px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div1">
+        <div id="div1"><span>请猜数：</span><input type="txt" class="text txt"><input class="text btn1 btn2" type="button" value="确定">
+        </div>
+        <p class="Lastnumber">上次猜的数: </p>
+        <p class="faluse"></p>
+        <p class="judge"></p>
+    </div>
+</body>
+
+</html>
