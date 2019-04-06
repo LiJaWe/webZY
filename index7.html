@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="utf-8">
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=1.2&ak=kBh6iP1y69tLI8SPOeLkTHlC1CRxyVAA"></script>
+    <script type="text/javascript" src="https://api.map.baidu.com/api?type=subway&v=1.0&ak=2Xn5TnHUisrYpE8oy5OCAun8YkiGrbcy"></script>
+    <script src="./js/main7.js"></script>
+    <script src="./js/jquery.js"></script>
+    <link rel="stylesheet" href="./css/main4.css">
+    <title>百度地图API</title>
+</head>
+
+<body>
+    <div class="body">
+        <div class="div0"></div>
+        <div id="div1"></div>
+        <div class="div2">
+            <div class="div20">
+                <div class="div201"></div>
+            </div>
+            <ul>
+                <li id="li1" style="background:#ed4014;   border-color: #ed4014; border-radius: 0 10px 0 0;">定位</li>
+                <li style="background:#f90; border-color:#f90;">查询公交换乘</li>
+                <li style="background:rgb(187, 189, 103); border-color:rgb(210, 207, 30);">公交换乘面板</li>
+                <li style="background:#19be6b ;border-color:#19be6b">换乘时间距离</li>
+                <li style="background:#1ce6c4; border-color: #1ce6c4;">公交地铁线路</li>
+                <li style="background:#2db7f5; border-color: #2db7f5;border-radius: 0 0 10px 0;">地铁图展示</li>
+            </ul>
+        </div>
+        <div class="div3">
+            <div class="div31">
+                <span>start:</span><input type="text" id="txt1">
+                <span>end:</span><input type="text" id="txt2"></div>
+            <select class="select">
+        <option value="0">最少时间</option>
+        <option value="1">最少换乘</option>
+        <option value="2">最少步行</option>
+        <option value="3">不乘地铁</option>
+    </select> <input type="button" id="result" value="查询" />
+        </div>
+        <div class="div3 div">
+            <span>公交线路：</span><input type="text" id="txt3">
+            <input type="button" id="result" class="btn" value="查询" />
+        </div>
+        <div class="div4" id="ret1"></div>
+    </div>
+    <div class="div5" id="ret"></div>
+    <div id="div6"></div>
+</body>
+
+</html>

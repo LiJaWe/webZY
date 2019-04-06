@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+
+    <meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" /> 5
+    <title>地铁图展示</title>
+
+    <script type="text/javascript" src="https://api.map.baidu.com/api?type=subway&v=1.0&ak=2Xn5TnHUisrYpE8oy5OCAun8YkiGrbcy"></script>
+
+    <style type="text/css">
+        #container {
+            height: 100%
+        }
+        
+        html,
+        body,
+        div {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <div id="container"></div>
+
+    <script type="text/javascript">
+        var subwayCityName = '北京';
+        var list = BMapSub.SubwayCitiesList;
+        var subwaycity = null;
+        for (var i = 0; i < list.length; i++) {
+            if (list[i].name === subwayCityName) {
+                subwaycity = list[i];
+                break;
+            }
+        }
+        var subway = new BMapSub.Subway('container', subwaycity.citycode);
+        subway.setZoom(0.5);
+    </script>
+</body>
+
+
+</html>
